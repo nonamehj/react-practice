@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 35rem;
+  margin-top: 8rem;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 0.25rem;
+  transition: all 0.3s linear;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
+.section-center:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.alert {
+  margin-bottom: 1rem;
+  height: 1.25rem;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-size: 0.7rem;
+  border-radius: 0.25rem;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+}
+.alert-danger {
+  color: #721c24;
+  background: #f8d7da;
+}
+.alert-success {
+  color: #155724;
+  background: #d5edda;
+}
+.grocery-form h3 {
+  color: #063251;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.form-control {
+  display: flex;
+  justify-content: center;
+}
+.grocery {
+  padding: 0.25rem;
+  padding-left: 1rem;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  border-color: transparent;
+  font-size: 1rem;
+  flex: 1 0 auto;
+  color: #617d98;
+  background: rgb(241, 245, 248);
+}
+
+.grocery::placeholder {
+  color: #617d98;
+}
+
+.submit-btn {
+  background: #a5d5f8;
+  border-color: transparent;
+  flex: 0 0 5rem;
+  display: gird;
+  align-items: center;
+  padding: 0.25rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  font-size: 0.85rem;
+}
+.submit-btn:hover {
+  background: #49a6e9;
+  color: #000;
+}
+
+.grocery-container {
+  margin-top: 2rem;
+}
+.grocery-item {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s linear;
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+  text-transform: capitalize;
+}
+
+.grocery-item:hover {
+  color: #617d98;
+  background: #f1f5f8;
+}
+.grocery-item:hover .title {
+  color: #617d98;
+}
+
+.title {
+  margin-bottom: 0;
+  color: #102a42;
+  letter-spacing: 2px;
+  transition: all 0.3s linear;
+  flex: 1;
+  background: rgb(241, 245, 248);
+  margin-right: 1rem;
+}
+
+.edit-btn,
+.delete-btn {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 0.7rem;
+  margin: 0 0.15rem;
+  transition: all 0.3s linear;
+}
+
+.edit-btn {
+  color: #6be675;
+}
+.edit-btn:hover {
+  color: #25bb32;
+}
+.delete-btn {
+  color: #e66b6b;
+}
+.delete-btn:hover {
+  color: #bb2525;
+}
+.clear-btn {
+  text-transform: capitalize;
+  width: 10rem;
+  height: 1.5rem;
+  display: grid;
+  align-items: center;
+  background: transparent;
+  border-color: transparent;
+  color: #e66b6b;
+  margin: 0 auto;
+  font-size: 0.85rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  margin-top: 1.25rem;
+}
